@@ -1,0 +1,40 @@
+//Global Varibles 
+int appWidth, appHeight;
+String title, footer;
+PFont titeFont, footerFont;
+color purple, resetdefaultInk;
+int sizeFont;
+//
+void setup() { 
+  //fullScreen(); //displayWidth & displayHeight
+  size(500, 600);
+  appWidth = width;
+  appHeight = height; 
+  //
+  // Population ( DIVs or rect() ) 
+  //
+  //Text Setup
+  //Fonts From OS (Operating System)
+  String[] fontList = PFont.list(); //List all font available OS
+  
+
+  // titleFont = ;
+  //footerFont = ; 
+
+  //
+} //End Setup
+//
+void draw() { 
+  //Text is the same size or relative to rec()
+  //
+  //Drawing Font Code
+  //
+ // rect( xTitle, yTitle, widthTitle, heightTitle); //Title: YAHOO!!
+  //rect( xFooter, yFooter, widthFooter, heightFooter); //Footer: drip
+} //End draw
+//
+void keyPressed() {} //End keyPressed
+//
+void mousePressed() {} //End mouspressed
+//
+//MAIN Program
