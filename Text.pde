@@ -8,12 +8,11 @@ float xTitle, yTitle, widthTitle, heightTitle;
 float xFooter, yFooter, widthFooter, heightFooter;
 //
 void setup() {
-  //fullScreen(); //displayWidth & displayHeight
   size(500, 600);
   appWidth = width;
   appHeight = height; 
   //
-  // Population 
+// Population 
   xTitle = appWidth*1/4;
   yTitle = appHeight*1/10;
   widthTitle= appWidth*1/2;
@@ -22,41 +21,28 @@ void setup() {
   yFooter = appHeight*7/10; 
   widthFooter = widthTitle; 
   heightFooter = heightTitle;
-  //
-  //DIVs or rect() 
-  // Layout our text space and typographical features 
+//DIVs or rect()
   rect( xTitle, yTitle, widthTitle, heightTitle); 
-  rect( xFooter, yFooter, widthFooter, heightFooter ); 
-  //
-  //Text Setup
-  //Fonts From OS (Operating System)
-  String[] fontList = PFont.list(); //List all font available OS
+  rect( xFooter, yFooter, widthFooter, heightFooter); 
+  String[] fontList = PFont.list(); 
   printArray(fontList);
   [fontname] = createFont("[fontspelling]", [startingFontSize]);
-  footerFont = createFont("arialMT",55); //Verify the font existin processing.Java 
-  //Tools / Create Font / Find Font / Do not press 'OK". Known bug 
-  // 
+  footerFont = createFont("arialMT",55); 
 } //End setup
 //
 void draw() { 
-  //Text is the same size or relative to rec()
-  //
-  //Drawing Font Code
-  fill( purple); //ink
-  textAlign( CENTER, CENTER ); //Align X&Y, see Processing.org / reference 
-  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+//Drawing Font Code
+  fill( purple); 
+  textAlign( CENTER, CENTER );
   size = 60;
   textFont(titleFont, size);
   text ( title, xTitle, yTitle, widthTitle, heightTitle ); 
-  fill(yellow); //ink 
-   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / reference 
-  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  fill(yellow); 
+   textAlign(CENTER, CENTER); 
   size = 90;
   textFont(footerFont, size);
   text ( footer, xFooter, yFooter, widthFooter, heightFooter ); 
   //
-  // rect( xTitle, yTitle, widthTitle, heightTitle); //Title: WAHOO!!
-  //rect( xFooter, yFooter, widthFooter, heightFooter); //Footer: drip
 } //End draw
 //
 void keyPressed() {} //End keyPressed
